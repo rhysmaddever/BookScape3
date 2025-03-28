@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EAF2F8; /* Light blue */
+    color: #2C3E50;
+  }
+  
+  h1, h2, h3 {
+    color: #154360; /* Dark blue for headings */
+  }
+  
+  header {
+    background-color: #2C3E50;
+    color: #FDFEFE;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 3px solid #1B4F72;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  section {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #D4E6F1; /* Light blue section */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    background-color: #1B4F72;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #154360;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #5D6D7E;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #FDFEFE;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #EBF5FB;
+    border-left: 4px solid #1B4F72;
+    border-radius: 5px;
+  }
+  
+  /* Review List Styling */
+  #review-list li {
+    border-left: 4px solid #F39C12; /* Orange for reviews */
+    background-color: #FEF5E7;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+  
+    header {
+        font-size: 1.3rem;
+    }
+  
+    button {
+        font-size: 0.9rem;
+    }
+  }
+  
+  .popup-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .popup-message.error {
+    background: #f44336;
+  }
+  
+  .popup-message.info {
+    background: #2196F3;
+  }
+  
+  .popup-message.success {
+    background: #4caf50;
+  }
+  
+  .popup-message.hide {
+    opacity: 0;
+  }
+  
+  

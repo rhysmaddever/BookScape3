@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookScape</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>BookScape</h1>
+      </header>
+      <main>
+        <!-- Add a Book Section -->
+        <section id="add-book-section">
+          <h2>Add a Book</h2>
+          <form id="book-form">
+            <input
+              type="text"
+              id="book-title"
+              placeholder="Book Title"
+              required
+            />
+            <input type="text" id="book-author" placeholder="Author" required />
+            <input type="text" id="book-genre" placeholder="Genre" required />
+            <button type="submit">Add Book</button>
+          </form>
+        </section>
+
+        <!-- Book List Section -->
+        <section id="book-list-section">
+          <h2>Your Books</h2>
+          <ul id="book-list"></ul>
+        </section>
+
+        <!-- Delete a Book Section -->
+        <section id="delete-book-section">
+          <h2>Delete a Book</h2>
+          <select id="select-book" required>
+            <option value="" disabled selected>Select a Book</option>
+          </select>
+          <button id="delete-book">Delete Book</button>
+        </section>
+
+        <!-- Update Reading Progress -->
+        <section id="update-progress-section">
+          <h2>Update Reading Progress</h2>
+          <form id="update-pages-form">
+            <select id="select-progress-book" required>
+              <option value="" disabled selected>Select a Book</option>
+            </select>
+            <input
+              type="number"
+              id="total-pages"
+              placeholder="Total Pages"
+              min="1"
+              required
+            />
+            <input
+              type="number"
+              id="pages-read"
+              placeholder="Pages Read"
+              min="0"
+              required
+            />
+            <button type="submit">Update Progress</button>
+          </form>
+        </section>
+
+        <!-- Add Review Section -->
+        <section id="add-review-section">
+          <h2>Add a Review</h2>
+          <form id="review-form">
+            <select id="select-review-book" required>
+              <option value="" disabled selected>Select a Book</option>
+            </select>
+            <input
+              type="text"
+              id="review-text"
+              placeholder="Write a review..."
+              required
+            />
+            <input
+              type="number"
+              id="review-rating"
+              placeholder="Rating (1-5)"
+              min="1"
+              max="5"
+              required
+            />
+            <button type="submit">Submit Review</button>
+          </form>
+        </section>
+
+        <!-- Download and Upload JSON -->
+        <section id="json-section">
+          <h2>Manage Books Data</h2>
+          <button id="download-json">Download Books JSON</button>
+          <input type="file" id="upload-json" accept=".json" />
+        </section>
+      </main>
+    </div>
+    <script src="functionality.js"></script>
+  </body>
+</html>
